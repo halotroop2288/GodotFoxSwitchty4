@@ -11,7 +11,7 @@ var Bullet = load("res://Bullet.tscn")
 var cooldown = 0
 const COOLDOWN = 8
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	
 	Shooting()
 

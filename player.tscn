@@ -1,7 +1,6 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Arwing/Arwing.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://Sounds/great fox flying.mp3" type="AudioStream" id=2]
 [ext_resource path="res://Sounds/arwing single laser one shot.wav" type="AudioStream" id=3]
 [ext_resource path="res://Explosion.tscn" type="PackedScene" id=4]
 [ext_resource path="res://player.gd" type="Script" id=5]
@@ -116,11 +115,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -53.0486 )
 modulate = Color( 0.486275, 1, 0.411765, 1 )
 pixel_size = 0.0225
 texture = ExtResource( 7 )
-
-[node name="Engine" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 2 )
-volume_db = -11.107
-autoplay = true
 
 [node name="Shoot" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )

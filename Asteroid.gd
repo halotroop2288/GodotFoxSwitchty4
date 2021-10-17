@@ -5,7 +5,7 @@ var variation = rand_range(-3,3)
 var asteroidrotation = rand_range(-1,1)
 
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	rotation_degrees.z += asteroidrotation
 	rotation_degrees.y += asteroidrotation 
 	rotation_degrees.x += asteroidrotation 

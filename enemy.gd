@@ -5,7 +5,7 @@ var variation = rand_range(-1,1)
 const explosion = 0.6
 var explode_countdown = explosion
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	move_and_slide(Vector3(variation,variation,spd))
 	if transform.origin.z > 1:
 		queue_free()
