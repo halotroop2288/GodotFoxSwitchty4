@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/great fox flying.mp3-d1676d5d682055a3598bff4929f105d9.mp3str"
+
+[deps]
+
+source_file="res://Sounds/great fox flying.mp3"
+dest_files=[ "res://.import/great fox flying.mp3-d1676d5d682055a3598bff4929f105d9.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

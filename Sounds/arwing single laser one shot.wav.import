@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/arwing single laser one shot.wav-785170624d1334cb1f224cb7275f623c.sample"
+
+[deps]
+
+source_file="res://Sounds/arwing single laser one shot.wav"
+dest_files=[ "res://.import/arwing single laser one shot.wav-785170624d1334cb1f224cb7275f623c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

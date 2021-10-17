@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/GoldRings3.wav-01884b97e6b2e22488d70ca3499fb4a6.sample"
+
+[deps]
+
+source_file="res://Sounds/GoldRings3.wav"
+dest_files=[ "res://.import/GoldRings3.wav-01884b97e6b2e22488d70ca3499fb4a6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

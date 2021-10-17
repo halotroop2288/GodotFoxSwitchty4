@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Invader III/Invader III.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Explosion.tscn" type="PackedScene" id=2]
+[ext_resource path="res://enemy.gd" type="Script" id=4]
+
+[sub_resource type="BoxShape" id=1]
+
+[node name="enemy" type="KinematicBody" groups=[
+"Enemies",
+]]
+script = ExtResource( 4 )
+
+[node name="EnemyMesh" type="MeshInstance" parent="."]
+transform = Transform( -1.30928, 0, 0, 0, -1.78549, 0, 0, 0, 1.61151, 0, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 4.29358, 0, 0, 0, 3.16832, 0, 0, 0, 2.25458, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="DirectionalLight" type="SpotLight" parent="."]
+transform = Transform( 0.774404, 0, 0.632692, 0, 1, 0, -0.632692, 0, 0.774404, 4.34548, -0.849078, 5.63374 )
+light_energy = 25.0
+light_indirect_energy = 0.0
+spot_range = 9.46756
+spot_angle = 29.3
+
+[node name="Explosion" parent="." instance=ExtResource( 2 )]

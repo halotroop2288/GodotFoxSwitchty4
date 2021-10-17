@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/yt1s.com-Star-Fox-64-Soundtrack-Mission-Accomplished.wav-621344b5252e6e793600cea95528c360.sample"
+
+[deps]
+
+source_file="res://Sounds/yt1s.com-Star-Fox-64-Soundtrack-Mission-Accomplished.wav"
+dest_files=[ "res://.import/yt1s.com-Star-Fox-64-Soundtrack-Mission-Accomplished.wav-621344b5252e6e793600cea95528c360.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

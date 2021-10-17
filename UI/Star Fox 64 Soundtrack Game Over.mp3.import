@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Star Fox 64 Soundtrack Game Over.mp3-d8f91c758f98a2eb6a2d405dc678152f.mp3str"
+
+[deps]
+
+source_file="res://UI/Star Fox 64 Soundtrack Game Over.mp3"
+dest_files=[ "res://.import/Star Fox 64 Soundtrack Game Over.mp3-d8f91c758f98a2eb6a2d405dc678152f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

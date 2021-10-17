@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/metal asteroid.obj-3fc8fc87ef5685b1437de756e3bf9a0e.mesh"
+
+[deps]
+
+files=[ "res://.import/metal asteroid.obj-3fc8fc87ef5685b1437de756e3bf9a0e.mesh" ]
+
+source_file="res://UI/Asteroids/metal asteroid.obj"
+dest_files=[ "res://.import/metal asteroid.obj-3fc8fc87ef5685b1437de756e3bf9a0e.mesh", "res://.import/metal asteroid.obj-3fc8fc87ef5685b1437de756e3bf9a0e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

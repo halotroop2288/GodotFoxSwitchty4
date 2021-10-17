@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/arwing single laser one shot.mp3-6286048332b5159e4268453b30a18882.mp3str"
+
+[deps]
+
+source_file="res://Sounds/arwing single laser one shot.mp3"
+dest_files=[ "res://.import/arwing single laser one shot.mp3-6286048332b5159e4268453b30a18882.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

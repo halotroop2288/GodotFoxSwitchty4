@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Star Fox 64 Soundtrack Corneria.mp3-28bd6b157a8b401c69bd20405467da0a.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Star Fox 64 Soundtrack Corneria.mp3"
+dest_files=[ "res://.import/Star Fox 64 Soundtrack Corneria.mp3-28bd6b157a8b401c69bd20405467da0a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

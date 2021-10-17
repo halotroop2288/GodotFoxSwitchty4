@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bomb pickup.mp3-9730d98645fec844451d7ff8dc705c61.mp3str"
+
+[deps]
+
+source_file="res://Sounds/bomb pickup.mp3"
+dest_files=[ "res://.import/bomb pickup.mp3-9730d98645fec844451d7ff8dc705c61.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

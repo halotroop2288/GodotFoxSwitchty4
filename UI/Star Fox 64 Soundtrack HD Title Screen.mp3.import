@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Star Fox 64 Soundtrack HD Title Screen.mp3-8379c78ebb154a5d5149c7423bbd07bb.mp3str"
+
+[deps]
+
+source_file="res://UI/Star Fox 64 Soundtrack HD Title Screen.mp3"
+dest_files=[ "res://.import/Star Fox 64 Soundtrack HD Title Screen.mp3-8379c78ebb154a5d5149c7423bbd07bb.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

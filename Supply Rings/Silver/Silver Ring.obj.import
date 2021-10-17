@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Silver Ring.obj-a7d7d46a28802fdf0d9a90029669e25e.mesh"
+
+[deps]
+
+files=[ "res://.import/Silver Ring.obj-a7d7d46a28802fdf0d9a90029669e25e.mesh" ]
+
+source_file="res://Supply Rings/Silver/Silver Ring.obj"
+dest_files=[ "res://.import/Silver Ring.obj-a7d7d46a28802fdf0d9a90029669e25e.mesh", "res://.import/Silver Ring.obj-a7d7d46a28802fdf0d9a90029669e25e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/no damage hit.mp3-ed2ee61e29405ac7d0d70b6ac9145a85.mp3str"
+
+[deps]
+
+source_file="res://Sounds/no damage hit.mp3"
+dest_files=[ "res://.import/no damage hit.mp3-ed2ee61e29405ac7d0d70b6ac9145a85.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

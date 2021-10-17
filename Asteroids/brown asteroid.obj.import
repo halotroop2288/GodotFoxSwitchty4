@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/brown asteroid.obj-7fea55c540a355d238cca8026d7a107e.mesh"
+
+[deps]
+
+files=[ "res://.import/brown asteroid.obj-7fea55c540a355d238cca8026d7a107e.mesh" ]
+
+source_file="res://Asteroids/brown asteroid.obj"
+dest_files=[ "res://.import/brown asteroid.obj-7fea55c540a355d238cca8026d7a107e.mesh", "res://.import/brown asteroid.obj-7fea55c540a355d238cca8026d7a107e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
