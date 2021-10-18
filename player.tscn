@@ -95,14 +95,19 @@ material/58 = null
 material/59 = null
 material/60 = null
 
-[node name="Area" type="Area" parent="."]
+[node name="Area" type="Area" parent="." groups=[
+"Player",
+]]
 
 [node name="CollisionShape" type="CollisionShape" parent="Area"]
-transform = Transform( 1.13559, 0, 0, 0, 0.545743, 0, 0, 0, 0.703544, 0, 0, 0.808831 )
+transform = Transform( 2.31353, 0, 0, 0, 0.622312, 0, 0, 0, 0.703544, 0, 0.295968, -0.953527 )
 shape = SubResource( 1 )
 
-[node name="Gun" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.455847, 14.364 )
+[node name="Gun2" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.993349, 0.308664, -8.40549 )
+
+[node name="Gun3" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.02454, 0.308664, -8.43958 )
 
 [node name="Crosshair1" type="Sprite3D" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0133629, -0.0590067, -22.2078 )
