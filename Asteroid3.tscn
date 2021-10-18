@@ -13,7 +13,7 @@ height = 1.62128
 script = ExtResource( 3 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1.49314, -0.38728, -0.152893, 0.109955, 1.84369, 0.228742, 0.0844468, -0.347357, 0.713876, 0.379401, -0.741504, 0.179348 )
+transform = Transform( 1.36748, -0.354688, -0.140026, 0.106018, 1.77767, 0.220552, 0.0843854, -0.347104, 0.713357, 0.379401, -0.680799, 0.236765 )
 shape = SubResource( 1 )
 
 [node name="Asteroid" type="MeshInstance" parent="."]

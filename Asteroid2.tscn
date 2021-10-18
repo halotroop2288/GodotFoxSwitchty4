@@ -17,5 +17,5 @@ mesh = ExtResource( 2 )
 material/0 = ExtResource( 1 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 8.30042, 0, 0, 0, 7.9627, 0, 0, 0, 4.49855, -1.18585, 0.24701, 0.93594 )
+transform = Transform( 8.30042, 0, 0, 0, 7.9627, 0, 0, 0, 4.49855, -1.18585, 0.24701, 0.394885 )
 shape = SubResource( 1 )

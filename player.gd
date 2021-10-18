@@ -1,11 +1,11 @@
 extends KinematicBody
 
 const MAXSPEED = 45
-const ACCELERATION = 1.25
+const ACCELERATION = 1.2
 var inputVector = Vector3()
 var velo = Vector3()
 
-onready var guns  = [$Gun]
+onready var guns  = [$Gun2,$Gun3]
 onready var main = get_tree().current_scene
 var Bullet = load("res://Bullet.tscn")
 var cooldown = 0
@@ -66,5 +66,4 @@ func explode() -> void:
 	$Area/CollisionShape.disabled = true
 	yield(get_tree().create_timer(0.5),"timeout")
 	queue_free()
-			
 

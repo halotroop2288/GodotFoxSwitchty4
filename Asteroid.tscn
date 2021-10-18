@@ -12,7 +12,7 @@
 script = ExtResource( 3 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 3.14249, 1.94903, 0, -2.7107, 2.86303, 0, 0, 0, 2.24025, -0.214036, -0.15664, 0.445812 )
+transform = Transform( 3.36803, 2.08891, 0, -2.90525, 3.06851, 0, 0, 0, 2.40104, -0.214036, -0.15664, 0.445812 )
 shape = SubResource( 1 )
 
 [node name="Asteroid" type="MeshInstance" parent="."]
