@@ -1,11 +1,13 @@
 [gd_scene load_steps=4 format=2]
 
 [sub_resource type="ParticlesMaterial" id=1]
+lifetime_randomness = 1.0
 emission_shape = 1
-emission_sphere_radius = 2.0
+emission_sphere_radius = 1.0
 spread = 180.0
 gravity = Vector3( 0, 0, 0 )
 initial_velocity = 20.0
+initial_velocity_random = 0.5
 
 [sub_resource type="SpatialMaterial" id=2]
 emission_enabled = true
@@ -16,12 +18,14 @@ emission_on_uv2 = false
 
 [sub_resource type="SphereMesh" id=3]
 material = SubResource( 2 )
+radius = 0.5
+height = 1.0
 
 [node name="BombExplosion" type="Spatial"]
 
 [node name="Particles" type="Particles" parent="."]
 emitting = false
-amount = 800
+amount = 1000
 lifetime = 1.5
 one_shot = true
 explosiveness = 1.0

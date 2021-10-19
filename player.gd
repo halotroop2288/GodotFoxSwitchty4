@@ -30,10 +30,10 @@ func _physics_process(_delta):
 	
 	#Banking
 	if Input.is_action_pressed("ui_page_up"):
-		rotation_degrees.z = 100
+		rotation_degrees.z += 100
 		
 	if Input.is_action_pressed("ui_page_down"):
-		rotation_degrees.z = -100
+		rotation_degrees.z += -100
 	
 	if Input.is_action_just_pressed("ui_home"):
 		get_tree().call_group("Gamestate", "spinright")
