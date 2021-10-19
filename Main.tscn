@@ -385,12 +385,12 @@ anims/spinright = SubResource( 3 )
 anims/start = SubResource( 4 )
 
 [node name="InterpolatedCamera" type="InterpolatedCamera" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9.31446 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10.7803 )
 keep_aspect = 0
 v_offset = 2.0
 doppler_tracking = 2
 current = true
-fov = 80.0
+fov = 75.0
 far = 300.0
 target = NodePath("../player/Spatial")
 speed = 0.2
@@ -400,7 +400,7 @@ enabled = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -14.0107 )
 
 [node name="Spatial" type="Spatial" parent="player"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 14.0107 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17.6404 )
 
 [node name="EnemySpawner" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -257.825 )
