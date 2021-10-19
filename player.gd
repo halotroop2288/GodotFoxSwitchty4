@@ -8,6 +8,7 @@ var velo = Vector3()
 onready var guns  = [$Gun2,$Gun3]
 onready var main = get_tree().current_scene
 var Bullet = load("res://Bullet.tscn")
+var Bomb = load("res://Bomb.tscn")
 var cooldown = 0
 const COOLDOWN = 8
 
@@ -40,6 +41,14 @@ func _physics_process(_delta):
 	if Input.is_action_just_pressed("ui_end"):
 		get_tree().call_group("Gamestate", "spinright")
 		$Spin.play()
+	if Input.is_action_just_pressed("ui_cancel"):
+		if Global.bombs >= 1:
+			$Bomb.play()
+			var bomb = Bomb.instance()
+			main.add_child(bomb)
+			bomb.transform = global_transform
+			bomb.velo = bomb.transform.basis.z * -50
+			get_tree().call_group("Gamestate", "bombs_down")
 
 func Shooting():
 
@@ -60,6 +69,9 @@ func _on_Area_body_entered(body):
 			get_tree().call_group("Gamestate", "rings_up")
 		if body.is_in_group("GoldRing"):
 			get_tree().call_group("Gamestate", "goldrings_up")
+		if body.is_in_group("SmartBomb"):
+			print("tick")
+			get_tree().call_group("Gamestate", "bombs_up")
 			
 func explode() -> void:
 	$Explosion/Particles.emitting = true
