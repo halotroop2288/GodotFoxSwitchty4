@@ -47,6 +47,9 @@ margin_right = 148.69
 margin_bottom = 26.4726
 rect_scale = Vector2( 2.5, 2.5 )
 text = "X"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Health100" type="TextureRect" parent="Control/Panel"]
 margin_left = -1717.61
@@ -154,9 +157,9 @@ __meta__ = {
 }
 
 [node name="RingsTotal" type="Label" parent="Control/Panel"]
-margin_left = -1583.23
+margin_left = -1608.18
 margin_top = 95.2049
-margin_right = -1543.23
+margin_right = -1568.18
 margin_bottom = 109.205
 rect_scale = Vector2( 7, 7 )
 custom_colors/font_color = Color( 0.419608, 0.945098, 0.858824, 1 )
