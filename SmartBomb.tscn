@@ -1,24 +1,54 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Smart Bomb/Smart Bomb.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://SmartBomb.gd" type="Script" id=2]
 
 [sub_resource type="BoxShape" id=1]
 
+[sub_resource type="BoxShape" id=2]
+
+[sub_resource type="Animation" id=3]
+resource_name = "caught"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("MeshInstance:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("MeshInstance:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0.5, 0.5, 0.5 ), Vector3( 0.974494, 0.974494, 0.974494 ), Vector3( 0, 0, 0 ) ]
+}
+
 [node name="SmartBomb" type="KinematicBody" groups=[
 "SmartBomb",
 ]]
 script = ExtResource( 2 )
-
-[node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 2.62656, 0, 0, 0, 2.8676, 0, 0, 0, 3.88123, 0, 0, 0 )
-shape = SubResource( 1 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
 mesh = ExtResource( 1 )
 material/0 = null
 material/1 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 2.62656, 0, 0, 0, 2.8676, 0, 0, 0, 3.88123, 0, 0, 0 )
+shape = SubResource( 1 )
 
 [node name="SpotLight" type="SpotLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.56774 )
@@ -30,3 +60,14 @@ transform = Transform( -0.999997, 0, -0.0023388, 0, 1, 0, 0.0023388, 0, -0.99999
 light_color = Color( 1, 0, 0, 1 )
 light_energy = 10.0
 spot_range = 2.3
+
+[node name="Area" type="Area" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="Area"]
+transform = Transform( 1.10435, 0, 0, 0, 1.18824, 0, 0, 0, 0.352727, 0, 0, 0 )
+shape = SubResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/caught = SubResource( 3 )
+
+[connection signal="area_entered" from="Area" to="." method="_on_Area_area_entered"]

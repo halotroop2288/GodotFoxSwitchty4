@@ -59,6 +59,7 @@ func rings_down():
 	
 func goldrings_up():
 	goldrings += 1
+	health += 1
 	$SilverRing.play()
 	if goldrings == 3:
 		$GoldRings3.play()

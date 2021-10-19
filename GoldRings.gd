@@ -10,3 +10,8 @@ func _physics_process(_delta):
 	rotation_degrees.y += coinrotate
 	if transform.origin.z > 10:
 		queue_free()
+
+
+func _on_Area_area_entered(area):
+	if area.is_in_group("Player"):
+		get_node("AnimationPlayer").play("caught")

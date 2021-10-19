@@ -22,6 +22,18 @@
 [sub_resource type="Animation" id=1]
 resource_name = "shake"
 length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("InterpolatedCamera:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 10.7803 ), Vector3( 1.54048, 1.82862, 10.7803 ), Vector3( -1.58446, -1.10316, 10.7803 ), Vector3( -0.836293, 1.85441, 10.7803 ), Vector3( 0, 0, 10.7803 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "spinleft"
@@ -386,10 +398,9 @@ anims/spinright = SubResource( 3 )
 anims/start = SubResource( 4 )
 
 [node name="InterpolatedCamera" type="InterpolatedCamera" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10.7803 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.836293, 1.85441, 10.7803 )
 keep_aspect = 0
 v_offset = 2.0
-doppler_tracking = 2
 current = true
 fov = 75.0
 far = 300.0
