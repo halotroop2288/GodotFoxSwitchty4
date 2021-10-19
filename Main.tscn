@@ -426,9 +426,9 @@ environment = SubResource( 6 )
 
 [node name="Particles" type="Particles" parent="."]
 transform = Transform( 22.5473, 0, 0, 0, -4.59488e-07, 12.7654, 0, -6.21098, -3.29692e-07, 0, 0, -216.236 )
-amount = 1500
+amount = 3000
 lifetime = 100.87
-speed_scale = 2.0
+speed_scale = 3.0
 process_material = SubResource( 7 )
 draw_pass_1 = SubResource( 8 )
 
