@@ -101,6 +101,7 @@ panorama = ExtResource( 3 )
 [sub_resource type="Environment" id=6]
 background_mode = 2
 background_sky = SubResource( 5 )
+background_sky_custom_fov = 100.0
 fog_depth_begin = 2365.6
 dof_blur_near_distance = 64.94
 dof_blur_near_transition = 0.01

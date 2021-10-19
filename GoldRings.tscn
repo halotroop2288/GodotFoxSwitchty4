@@ -18,3 +18,15 @@ shape = SubResource( 1 )
 [node name="MeshInstance" type="MeshInstance" parent="."]
 mesh = ExtResource( 1 )
 material/0 = null
+
+[node name="SpotLight" type="SpotLight" parent="."]
+transform = Transform( 0.574742, 0, 0, 0, 0.574742, 0, 0, 0, 0.574742, 0, 0, 2.78012 )
+light_energy = 40.0
+spot_range = 6.4
+spot_angle = 39.5
+
+[node name="SpotLight2" type="SpotLight" parent="."]
+transform = Transform( -0.574741, 0, 0.00136421, 0, 0.574742, 0, -0.00136421, 0, -0.574741, 0, 0, -3.01286 )
+light_energy = 40.0
+spot_range = 6.4
+spot_angle = 39.5
