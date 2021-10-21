@@ -1,7 +1,7 @@
 extends KinematicBody
 
 const MAXSPEED = 45
-const ACCELERATION = 1.2
+const ACCELERATION = 1
 var inputVector = Vector3()
 var velo = Vector3()
 
