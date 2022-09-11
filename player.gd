@@ -13,7 +13,7 @@ var cooldown = 0
 const COOLDOWN = 8
 
 func _physics_process(_delta):
-	
+	exit()
 	Shooting()
 
 	inputVector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
@@ -49,6 +49,7 @@ func _physics_process(_delta):
 			bomb.transform = global_transform
 			bomb.velo = bomb.transform.basis.z * -50
 			get_tree().call_group("Gamestate", "bombs_down")
+			
 
 func Shooting():
 
@@ -78,3 +79,6 @@ func explode() -> void:
 	yield(get_tree().create_timer(0.5),"timeout")
 	queue_free()
 
+func exit():
+	if Input.is_action_just_pressed("exit"):
+		get_tree().quit()
