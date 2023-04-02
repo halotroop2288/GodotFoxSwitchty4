@@ -16,4 +16,5 @@ dest_files=[ "res://.import/Invader III.obj-3c39b83d59cf09cf754422c0f82c442f.mes
 generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
 offset_mesh=Vector3( 0, 0, 0 )
-optimize_mesh=true
+octahedral_compression=true
+optimize_mesh_flags=4286

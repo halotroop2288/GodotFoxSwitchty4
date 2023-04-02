@@ -4,15 +4,17 @@ importer="texture"
 type="StreamTexture"
 path.s3tc="res://.import/3F0A11F6_c.png-9e1c0f8b77a4a1126f6e71a2dd66ae96.s3tc.stex"
 path.etc2="res://.import/3F0A11F6_c.png-9e1c0f8b77a4a1126f6e71a2dd66ae96.etc2.stex"
+path.etc="res://.import/3F0A11F6_c.png-9e1c0f8b77a4a1126f6e71a2dd66ae96.etc.stex"
+path.pvrtc="res://.import/3F0A11F6_c.png-9e1c0f8b77a4a1126f6e71a2dd66ae96.pvrtc.stex"
 metadata={
-"imported_formats": [ "s3tc", "etc2" ],
+"imported_formats": [ "bptc", "s3tc", "etc2", "etc", "pvrtc" ],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Laser Power Up/3F0A11F6_c.png"
-dest_files=[ "res://.import/3F0A11F6_c.png-9e1c0f8b77a4a1126f6e71a2dd66ae96.s3tc.stex", "res://.import/3F0A11F6_c.png-9e1c0f8b77a4a1126f6e71a2dd66ae96.etc2.stex" ]
+dest_files=[ "res://.import/3F0A11F6_c.png-9e1c0f8b77a4a1126f6e71a2dd66ae96.s3tc.stex", "res://.import/3F0A11F6_c.png-9e1c0f8b77a4a1126f6e71a2dd66ae96.etc2.stex", "res://.import/3F0A11F6_c.png-9e1c0f8b77a4a1126f6e71a2dd66ae96.etc.stex", "res://.import/3F0A11F6_c.png-9e1c0f8b77a4a1126f6e71a2dd66ae96.pvrtc.stex" ]
 
 [params]
 
@@ -30,6 +32,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=false
