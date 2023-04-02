@@ -16,4 +16,5 @@ dest_files=[ "res://.import/grey asteroid.obj-9924ef6bfb5f1d0c205453057a07d218.m
 generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
 offset_mesh=Vector3( 0, 0, 0 )
-optimize_mesh=true
+octahedral_compression=true
+optimize_mesh_flags=4286
