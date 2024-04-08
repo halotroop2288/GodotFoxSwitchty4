@@ -35,9 +35,7 @@ tracks/1/keys = {
 "values": [ Vector3( 1, 1, 1 ), Vector3( 1.38902, 1.38902, 1.38902 ), Vector3( 0, 0, 0 ) ]
 }
 
-[node name="GoldRings" type="KinematicBody" groups=[
-"GoldRing",
-]]
+[node name="GoldRings" type="KinematicBody" groups=["GoldRing"]]
 transform = Transform( 1.73991, 0, 0, 0, 1.73991, 0, 0, 0, 1.73991, 0, 0, 0 )
 script = ExtResource( 2 )
 
@@ -47,7 +45,6 @@ shape = SubResource( 1 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 mesh = ExtResource( 1 )
-material/0 = null
 
 [node name="SpotLight" type="SpotLight" parent="."]
 transform = Transform( 0.574742, 0, 0, 0, 0.574742, 0, 0, 0, 0.574742, 0, 0, 2.78012 )

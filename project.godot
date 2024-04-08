@@ -8,6 +8,28 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "KinematicBody",
+"class": "GoldRing",
+"language": "GDScript",
+"path": "res://GoldRings.gd"
+}, {
+"base": "KinematicBody",
+"class": "SilverRing",
+"language": "GDScript",
+"path": "res://SilverRings.gd"
+}, {
+"base": "KinematicBody",
+"class": "SmartBomb",
+"language": "GDScript",
+"path": "res://SmartBomb.gd"
+} ]
+_global_script_class_icons={
+"GoldRing": "",
+"SilverRing": "",
+"SmartBomb": ""
+}
+
 [application]
 
 config/name="Star-Fox-64"
@@ -24,8 +46,6 @@ Global="*res://Global.gd"
 
 window/size/width=1920
 window/size/height=1280
-window/size/borderless=true
-window/size/fullscreen=true
 window/size/test_width=1920
 window/size/test_height=1280
 window/stretch/mode="2d"

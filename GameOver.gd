@@ -1,7 +1,7 @@
 extends Node2D
 
 
-func _physics_process(delta):
+func _physics_process(_delta:float) -> void:
 	$Panel/RingsTotal.text = str(Global.rings)
 	if Input.is_action_just_released("ui_select"):
 		_on_Button_pressed()
