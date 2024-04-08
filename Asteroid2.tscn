@@ -6,9 +6,7 @@
 
 [sub_resource type="CapsuleShape" id=1]
 
-[node name="Asteroid2" type="KinematicBody" groups=[
-"Asteroid",
-]]
+[node name="Asteroid2" type="KinematicBody" groups=["Asteroid"]]
 script = ExtResource( 3 )
 
 [node name="Asteroid" type="MeshInstance" parent="."]

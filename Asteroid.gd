@@ -1,15 +1,28 @@
 extends KinematicBody
 
-var spd = rand_range(20,40)
-var variation = rand_range(-3,3)
-var asteroidrotation = rand_range(-1,1)
+var spd:int = rand_range(20, 40)
+var variation:int = rand_range(-3, 3)
+var asteroidrotation:int = rand_range(-1, 1)
 
+var active:bool = false
 
-func _physics_process(_delta):
-	rotation_degrees.z += asteroidrotation
-	rotation_degrees.y += asteroidrotation 
-	rotation_degrees.x += asteroidrotation 
-	
-	move_and_slide(Vector3(variation,variation,spd))
-	if transform.origin.z > 0:
-		queue_free()
+func activate():
+	active = true
+	$CollisionShape.disabled = false
+	show()
+
+func deactivate():
+	active = false
+	$CollisionShape.disabled = true
+	hide()
+
+func _physics_process(_delta:float) -> void:
+	if active:
+		rotation_degrees.z += asteroidrotation
+		rotation_degrees.y += asteroidrotation 
+		rotation_degrees.x += asteroidrotation 
+		
+		move_and_slide(Vector3(variation, variation, spd))
+		if transform.origin.z > 0:
+			#queue_free()
+			deactivate()

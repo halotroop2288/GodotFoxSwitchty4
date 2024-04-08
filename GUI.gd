@@ -6,16 +6,13 @@ func _ready():
 
 func update_gui_rings(rings):
 	$Control/Panel/RingsTotal.text = str(rings)
-	pass
 
 func update_gui_wings(wings):
 	$Control/Panel/WingsTotal.text = str(wings)
-	pass
-	
+
 func update_gui_bombs(bombs):
 	$Control/Panel/BombsTotal.text = str(bombs)
-	pass
-	
+
 func update_gui_health(health):
 	if health == 3:
 		$Control/Panel/Health100.visible = true
@@ -52,5 +49,3 @@ func update_gui_goldrings(goldrings):
 		$Control/Panel/Rings_1.visible = false
 		$Control/Panel/Rings_0.visible = false
 		$Control/Panel/Rings_2.visible = false
-	
-	pass

@@ -1,14 +1,27 @@
 extends KinematicBody
 
-var spd = 50
-var variation = rand_range(-0.25,0.5)
-var bombrotate = 3
+class_name SmartBomb
 
-func _physics_process(_delta):
-	move_and_slide(Vector3(variation,variation,spd))
-	rotation_degrees.y += bombrotate
-	if transform.origin.z > 10:
-		queue_free()
+var spd:float = 50
+var variation:float = rand_range(-0.25,0.5)
+var bombrotate:float = 3
+var active:bool = false
+
+func activate():
+	active = true
+	self.show()
+
+func deactivate():
+	active = false
+	self.hide()
+
+func _physics_process(_delta:float) -> void:
+	if active:
+		move_and_slide(Vector3(variation,variation,spd))
+		rotation_degrees.y += bombrotate
+		if transform.origin.z > 10:
+			#queue_free()
+			deactivate()
 
 
 func _on_Area_area_entered(area):
