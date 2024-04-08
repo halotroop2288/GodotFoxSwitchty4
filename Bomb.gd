@@ -11,24 +11,31 @@ func _physics_process(_delta:float) -> void:
 		set_linear_velocity(velo)
 
 func activate() -> void:
+	active = true
 	$BombExplosion/Particles.emitting = false
 	$Area/CollisionShape2.disabled = true
 	$MeshInstance.show()
+	#The following is a fix to keep the bombs from automatically blowing up
+	$Timer.start(1.5)
 	linear_velocity = velo
-	active = true
 
 func deactivate() -> void:
+	active = false
 	$BombExplosion/Particles.emitting = false
 	$Area/CollisionShape2.disabled = true
 	$MeshInstance.hide()
 	linear_velocity = Vector3(0, 0, 0)
-	active = false
 
 func explode() -> void:
+	if not active:
+		deactivate()
+		return
+	$BombExplosion/Particles.restart()
 	$BombExplosion/Particles.emitting = true
 	$MeshInstance.visible = false
 	$Area/CollisionShape2.disabled = false
 	yield(get_tree().create_timer(1.5),"timeout")
+	$BombExplosion/Particles.emitting = false
 	#queue_free()
 	deactivate()
 

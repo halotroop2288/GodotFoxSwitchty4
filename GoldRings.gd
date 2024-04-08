@@ -8,6 +8,7 @@ var coinrotate:float = 3
 var active:bool = true
 
 func activate():
+	$AnimationPlayer.stop(true)
 	active = true
 	self.show()
 
@@ -26,4 +27,5 @@ func _physics_process(_delta:float) -> void:
 
 func _on_Area_area_entered(area):
 	if area.is_in_group("Player"):
-		get_node("AnimationPlayer").play("caught")
+		$AnimationPlayer.play("caught")
+		#get_node("AnimationPlayer").play("caught")

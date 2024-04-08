@@ -452,9 +452,6 @@ light_energy = 0.5
 material = SubResource( 10 )
 margin_right = 1920.0
 margin_bottom = 1280.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="ItemSpawner" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -228.052 )
