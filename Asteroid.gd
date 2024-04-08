@@ -2,7 +2,7 @@ extends KinematicBody
 
 var spd:int = rand_range(20, 40)
 var variation:int = rand_range(-3, 3)
-var asteroidrotation:int = rand_range(-1, 1)
+var asteroidrotation:float = rand_range(-1, 1)
 
 var active:bool = false
 

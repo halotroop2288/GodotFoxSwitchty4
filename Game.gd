@@ -1,8 +1,8 @@
 extends Spatial
 
 var wings:int = 1
-var goldrings = 0
-var health = 3
+var goldrings:int = 0
+var health:int = 3
 
 func _ready():
 	Global.rings = 0
