@@ -2,9 +2,9 @@ extends Spatial
 
 onready var main:Node = get_tree().current_scene
 
-const Rings:PackedScene = preload("res://SilverRings.tscn")
-const GoldRings:PackedScene = preload("res://GoldRings.tscn")
-const SmartBombs:PackedScene = preload("res://SmartBomb.tscn")
+const Rings:PackedScene = preload("res://scenes/object/SilverRings.tscn")
+const GoldRings:PackedScene = preload("res://scenes/object/GoldRings.tscn")
+const SmartBombs:PackedScene = preload("res://scenes/object/SmartBomb.tscn")
 var RingTicker:int = 0
 
 var smart_bomb_pool:Array = []

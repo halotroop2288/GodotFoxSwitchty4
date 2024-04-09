@@ -1,6 +1,6 @@
 extends RigidBody
 
-#const BombExplosion:PackedScene = preload("res://BombExplosion.tscn")
+#const BombExplosion:PackedScene = preload("res://scenes/object/BombExplosion.tscn")
 
 var velo:Vector3 = Vector3()
 

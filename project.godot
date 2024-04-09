@@ -12,17 +12,17 @@ _global_script_classes=[ {
 "base": "KinematicBody",
 "class": "GoldRing",
 "language": "GDScript",
-"path": "res://GoldRings.gd"
+"path": "res://scenes/object/GoldRings.gd"
 }, {
 "base": "KinematicBody",
 "class": "SilverRing",
 "language": "GDScript",
-"path": "res://SilverRings.gd"
+"path": "res://scenes/object/SilverRings.gd"
 }, {
 "base": "KinematicBody",
 "class": "SmartBomb",
 "language": "GDScript",
-"path": "res://SmartBomb.gd"
+"path": "res://scenes/object/SmartBomb.gd"
 } ]
 _global_script_class_icons={
 "GoldRing": "",
@@ -33,14 +33,14 @@ _global_script_class_icons={
 [application]
 
 config/name="Star-Fox-64"
-run/main_scene="res://StartMenu.tscn"
+run/main_scene="res://scenes/gui/StartMenu.tscn"
 boot_splash/image="res://SplashScreens/Title.jpg"
 boot_splash/bg_color=Color( 0, 0, 0, 1 )
 config/icon="res://icon.png"
 
 [autoload]
 
-Global="*res://Global.gd"
+Global="*res://scenes/object/Global.gd"
 
 [display]
 
@@ -127,4 +127,3 @@ common/enable_pause_aware_picking=true
 vram_compression/import_bptc=true
 vram_compression/import_etc=true
 vram_compression/import_pvrtc=true
-environment/default_environment="res://default_env.tres"

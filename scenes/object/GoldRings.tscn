@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Supply Rings/Gold/Gold Ring.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://GoldRings.gd" type="Script" id=2]
+[ext_resource path="res://scenes/object/GoldRings.gd" type="Script" id=1]
+[ext_resource path="res://Supply Rings/Gold/Gold Ring.obj" type="ArrayMesh" id=2]
 
 [sub_resource type="CapsuleShape" id=1]
 
@@ -37,14 +37,14 @@ tracks/1/keys = {
 
 [node name="GoldRings" type="KinematicBody" groups=["GoldRing"]]
 transform = Transform( 1.73991, 0, 0, 0, 1.73991, 0, 0, 0, 1.73991, 0, 0, 0 )
-script = ExtResource( 2 )
+script = ExtResource( 1 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1.35006, 0, 0, 0, 1.53759, 0, 0, 0, 0.179177, 0, 0, 0 )
 shape = SubResource( 1 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
-mesh = ExtResource( 1 )
+mesh = ExtResource( 2 )
 
 [node name="SpotLight" type="SpotLight" parent="."]
 transform = Transform( 0.574742, 0, 0, 0, 0.574742, 0, 0, 0, 0.574742, 0, 0, 2.78012 )

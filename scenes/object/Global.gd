@@ -3,6 +3,7 @@ extends Node
 var rings:int = 0
 var bombs:int = 2
 
+const main_scene_dir:String = "res://scenes/level/Main.tscn"
 var main_scene:PackedScene = null
 var loading_thread:Thread = Thread.new()
 
@@ -13,7 +14,7 @@ func _ready() -> void:
 	loading_thread.start(self, "load_scene", null, Thread.PRIORITY_HIGH)
 
 func load_scene() -> void:
-	var inter:ResourceInteractiveLoader = ResourceLoader.load_interactive("res://Main.tscn", "PackedScene")
+	var inter:ResourceInteractiveLoader = ResourceLoader.load_interactive(main_scene_dir, "PackedScene")
 	var beginning:int = Time.get_ticks_msec()
 	while inter.poll() != ERR_FILE_EOF:
 		print("Stage: ", inter.get_stage(), "\n ticks: ", Time.get_ticks_msec())

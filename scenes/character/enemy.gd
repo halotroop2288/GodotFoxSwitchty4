@@ -1,6 +1,6 @@
 extends KinematicBody
 
-const BulletEnemy:PackedScene = preload("res://BulletEnemy.tscn")
+const BulletEnemy:PackedScene = preload("res://scenes/object/BulletEnemy.tscn")
 var bullet_enemy_pool:Array
 const bullet_enemy_max:int = 10
 

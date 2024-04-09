@@ -1,10 +1,10 @@
 extends Spatial
 
 onready var main:Node = get_tree().current_scene
-const Enemy:PackedScene = preload("res://enemy.tscn")
-const Asteroid:PackedScene = preload("res://Asteroid.tscn")
-const Asteroid2:PackedScene = preload("res://Asteroid2.tscn")
-const Asteroid3:PackedScene = preload("res://Asteroid3.tscn")
+const Enemy:PackedScene = preload("res://scenes/character/enemy.tscn")
+const Asteroid:PackedScene = preload("res://scenes/object/Asteroid.tscn")
+const Asteroid2:PackedScene = preload("res://scenes/object/Asteroid2.tscn")
+const Asteroid3:PackedScene = preload("res://scenes/object/Asteroid3.tscn")
 
 var enemy_pool:Array = []
 const enemy_max:int = 25

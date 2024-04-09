@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Bullet.gd" type="Script" id=1]
+[ext_resource path="res://scenes/object/Bullet.gd" type="Script" id=1]
 [ext_resource path="res://Sounds/no damage hit.wav" type="AudioStream" id=2]
 
 [sub_resource type="CapsuleMesh" id=1]

@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Invader III/Invader III.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://Explosion.tscn" type="PackedScene" id=2]
-[ext_resource path="res://enemy.gd" type="Script" id=4]
+[ext_resource path="res://scenes/character/enemy.gd" type="Script" id=1]
+[ext_resource path="res://scenes/object/Explosion.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Invader III/Invader III.obj" type="ArrayMesh" id=3]
 
 [sub_resource type="SphereShape" id=1]
 radius = 0.683308
@@ -10,11 +10,11 @@ radius = 0.683308
 [sub_resource type="SphereShape" id=2]
 
 [node name="enemy" type="KinematicBody" groups=["Enemies"]]
-script = ExtResource( 4 )
+script = ExtResource( 1 )
 
 [node name="EnemyMesh" type="MeshInstance" parent="."]
 transform = Transform( -1.30928, 0, 0, 0, -1.78549, 0, 0, 0, 1.61151, 0, 0, 0 )
-mesh = ExtResource( 1 )
+mesh = ExtResource( 3 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 4.21088, 0, 0, 0, 4.21088, 0, 0, 0, 4.21088, 0, 0, 0 )

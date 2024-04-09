@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Sounds/Star Fox 64 Soundtrack HD Title Screen.mp3" type="AudioStream" id=1]
-[ext_resource path="res://SplashScreens/Title.jpg" type="Texture" id=2]
-[ext_resource path="res://StartMenu.gd" type="Script" id=3]
-[ext_resource path="res://Sounds/selectSound.tres" type="AudioStream" id=4]
+[ext_resource path="res://Sounds/selectSound.tres" type="AudioStream" id=1]
+[ext_resource path="res://Sounds/Star Fox 64 Soundtrack HD Title Screen.mp3" type="AudioStream" id=2]
+[ext_resource path="res://SplashScreens/Title.jpg" type="Texture" id=3]
+[ext_resource path="res://scenes/gui/StartMenu.gd" type="Script" id=4]
 
 [sub_resource type="Shader" id=1]
 code = "/*
@@ -261,22 +261,22 @@ shader_param/vignette_intensity = 0.1
 shader_param/vignette_opacity = 0.5
 
 [node name="StartMenu" type="Node2D"]
-script = ExtResource( 3 )
+script = ExtResource( 4 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_right = 1850.0
 margin_bottom = 1200.0
 rect_scale = Vector2( 1.04606, 1.07164 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 expand = true
 stretch_mode = 1
 
 [node name="TitleMusicPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 1 )
+stream = ExtResource( 2 )
 autoplay = true
 
 [node name="SelectSoundPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 4 )
+stream = ExtResource( 1 )
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
 

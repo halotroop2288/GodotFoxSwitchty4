@@ -8,11 +8,11 @@ var velo:Vector3 = Vector3()
 onready var guns:Array  = [$Gun2,$Gun3]
 onready var main:Node = get_tree().current_scene
 
-const Bullet:PackedScene = preload("res://Bullet.tscn")
+const Bullet:PackedScene = preload("res://scenes/object/Bullet.tscn")
 var bullet_pool:Array = []
 const bullet_max:int = 50
 
-const Bomb:PackedScene = preload("res://Bomb.tscn")
+const Bomb:PackedScene = preload("res://scenes/object/Bomb.tscn")
 var bomb_pool:Array = []
 const bomb_max:int = 20
 
