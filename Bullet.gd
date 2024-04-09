@@ -1,17 +1,17 @@
 extends RigidBody
 
-var velo = Vector3()
+var velo:Vector3 = Vector3()
 
 onready var lifespan:Timer = $Timer
 var active:bool = false
 
-func activate():
+func activate() -> void:
 	active = true
 	$Area/CollisionShape.disabled = false
 	lifespan.start(1.5)
 	show()
 
-func deactivate():
+func deactivate() -> void:
 	active = false
 	$Area/CollisionShape.disabled = true
 	hide()
@@ -26,14 +26,11 @@ func _on_Area_body_entered(body) -> void:
 	if body.is_in_group("Enemies"):
 		get_tree().call_group("Gamestate", "enemy_killed")
 		body.explode()
-		#queue_free()
 		deactivate()
-	
 	if body.is_in_group("Asteroid"):
 		get_tree().call_group("Gamestate", "asteroid_hit")
-		#queue_free()
 		deactivate()
 
 
-func _on_Timer_timeout():
+func _on_Timer_timeout() -> void:
 	deactivate()

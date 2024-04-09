@@ -6,20 +6,20 @@ var inputVector:Vector3 = Vector3()
 var velo:Vector3 = Vector3()
 
 onready var guns:Array  = [$Gun2,$Gun3]
-onready var main = get_tree().current_scene
+onready var main:Node = get_tree().current_scene
 
-const Bullet = preload("res://Bullet.tscn")
+const Bullet:PackedScene = preload("res://Bullet.tscn")
 var bullet_pool:Array = []
 const bullet_max:int = 50
 
-const Bomb = preload("res://Bomb.tscn")
+const Bomb:PackedScene = preload("res://Bomb.tscn")
 var bomb_pool:Array = []
 const bomb_max:int = 20
 
-var cooldown = 0
-const COOLDOWN = 8
+#var cooldown = 0
+#const COOLDOWN = 8
 
-func _ready():
+func _ready() -> void:
 	fillBombPool()
 	fillBulletPool()
 
@@ -62,8 +62,7 @@ func _physics_process(_delta:float) -> void:
 			bomb.activate()
 			get_tree().call_group("Gamestate", "bombs_down")
 
-func fillBulletPool():
-	pass
+func fillBulletPool() -> void:
 	bullet_pool.clear()
 	var a_bullet:int = 0
 	while a_bullet < bullet_max:
@@ -71,7 +70,7 @@ func fillBulletPool():
 		bullet_pool[a_bullet].deactivate()
 		a_bullet += 1
 
-func fillBombPool():
+func fillBombPool() -> void:
 	bomb_pool.clear()
 	var a_bomb:int = 0
 	while a_bomb < bomb_max:
@@ -89,7 +88,7 @@ func getBombFromPool():
 		if not bombs.active:
 			return bombs
 
-func Shooting():
+func Shooting() -> void:
 	if Input.is_action_just_pressed("ui_accept"): 
 		$Shoot.play()
 		for i in guns:
@@ -100,7 +99,7 @@ func Shooting():
 			bullet.velo = bullet.transform.basis.z * -400
 			bullet.activate()
 
-func _on_Area_body_entered(body):
+func _on_Area_body_entered(body) -> void:
 		if body.is_in_group("Enemies"):
 			get_tree().call_group("Gamestate", "player_damage")
 		if body.is_in_group("Asteroid"):
@@ -118,6 +117,6 @@ func explode() -> void:
 	yield(get_tree().create_timer(0.5),"timeout")
 	queue_free()
 
-func exit():
+func exit() -> void:
 	if Input.is_action_just_pressed("exit"):
 		get_tree().quit()

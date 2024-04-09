@@ -263,11 +263,7 @@ shader_param/vignette_opacity = 0.5
 [node name="StartMenu" type="Node2D"]
 script = ExtResource( 3 )
 
-[node name="Panel" type="Panel" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
-
-[node name="TextureRect" type="TextureRect" parent="Panel"]
+[node name="TextureRect" type="TextureRect" parent="."]
 margin_right = 1850.0
 margin_bottom = 1200.0
 rect_scale = Vector2( 1.04606, 1.07164 )

@@ -1,33 +1,33 @@
 extends KinematicBody
 
-const BulletEnemy = preload("res://BulletEnemy.tscn")
+const BulletEnemy:PackedScene = preload("res://BulletEnemy.tscn")
 var bullet_enemy_pool:Array
 const bullet_enemy_max:int = 10
 
-var spd = rand_range(40,100)
-var variation = rand_range(-1,1)
-const explosion = 0.6
-var explode_countdown = explosion
+var spd:float = rand_range(40,100)
+var variation:float = rand_range(-1,1)
+const explosion:float = 0.6
+var explode_countdown:float = explosion
 var velo:Vector3 = Vector3()
-onready var gun  = $Gun
+onready var gun:Spatial  = $Gun
 var active:bool = false
 
-func _ready():
+func _ready() -> void:
 	fillBulletEnemyPool()
 
-func activate():
+func activate() -> void:
 	$Explosion/Particles.emitting = false
 	$EnemyMesh.visible = true
 	$CollisionShape.disabled = false
 	active = true
 
-func deactivate():
+func deactivate() -> void:
 	$Explosion/Particles.emitting = false
 	$EnemyMesh.visible = false
 	$CollisionShape.disabled = true
 	active = false
 
-func fillBulletEnemyPool():
+func fillBulletEnemyPool() -> void:
 	bullet_enemy_pool.clear()
 	var enemy_bullet:int = 0
 	while enemy_bullet < bullet_enemy_max:
@@ -55,7 +55,7 @@ func explode() -> void:
 	#queue_free()
 	deactivate()
 
-func _on_Timer_timeout():
+func _on_Timer_timeout() -> void:
 	var bullet = getBulletEnemyFromPool()
 	if not bullet.is_inside_tree():
 		get_parent().add_child(bullet)
@@ -63,6 +63,6 @@ func _on_Timer_timeout():
 	bullet.velo = bullet.transform.basis.z * 225
 	bullet.activate()
 
-func _on_Area_area_entered(area):
+func _on_Area_area_entered(area:Area) -> void:
 	if area.is_in_group("Player"):
 		explode()
