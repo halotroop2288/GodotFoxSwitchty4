@@ -1,10 +1,10 @@
 extends Spatial
 
-onready var main = get_tree().current_scene
+onready var main:Node = get_tree().current_scene
 
-var Rings = preload("res://SilverRings.tscn")
-var GoldRings = preload("res://GoldRings.tscn")
-var SmartBombs = preload("res://SmartBomb.tscn")
+const Rings:PackedScene = preload("res://SilverRings.tscn")
+const GoldRings:PackedScene = preload("res://GoldRings.tscn")
+const SmartBombs:PackedScene = preload("res://SmartBomb.tscn")
 var RingTicker:int = 0
 
 var smart_bomb_pool:Array = []
@@ -16,16 +16,15 @@ const ring_max:int = 10
 var gold_ring_pool:Array = []
 const gold_ring_max:int = 10
 
-func _ready():
-	#super_loader()
+func _ready() -> void:
 	loader()
 
-func loader():
+func loader() -> void:
 	fillSmartBombPool()
 	fillGoldRingPool()
 	fillRingPool()
 
-func super_loader():
+func super_loader() -> void:
 	var smart_bomb_thread:Thread = Thread.new()
 	smart_bomb_thread.start(self, "fillSmartBombPool")
 	var ring_thread:Thread = Thread.new()
@@ -42,7 +41,7 @@ func super_loader():
 		if not (gold_ring_thread.is_active() and ring_thread.is_active() and smart_bomb_thread.is_active()):
 			break
 
-func fillRingPool():
+func fillRingPool() -> void:
 	ring_pool.clear()
 	var a_ring:int = 0
 	while a_ring < ring_max:
@@ -50,7 +49,7 @@ func fillRingPool():
 		ring_pool[a_ring].deactivate()
 		a_ring += 1
 
-func fillGoldRingPool():
+func fillGoldRingPool() -> void:
 	gold_ring_pool.clear()
 	var a_ring:int = 0
 	while a_ring < gold_ring_max:
@@ -58,7 +57,7 @@ func fillGoldRingPool():
 		gold_ring_pool[a_ring].deactivate()
 		a_ring += 1
 
-func fillSmartBombPool():
+func fillSmartBombPool() -> void:
 	smart_bomb_pool.clear()
 	var a_bomb:int = 0
 	while a_bomb < smart_bomb_max:
@@ -81,7 +80,7 @@ func getSmartBombFromPool():
 		if not possibly_dangerous.active:
 			return possibly_dangerous
 
-func spawnRing():
+func spawnRing() -> void:
 	if ring_pool.empty():
 		return
 	var rings = getRingFromPool()
@@ -90,7 +89,7 @@ func spawnRing():
 	rings.transform.origin = transform.origin + Vector3(rand_range(-15,15), rand_range(-10,10), 0)
 	rings.activate()
 
-func spawnGoldRing():
+func spawnGoldRing() -> void:
 	if gold_ring_pool.empty():
 		return
 	var goldrings = getGoldRingFromPool()
@@ -99,7 +98,7 @@ func spawnGoldRing():
 	goldrings.transform.origin = transform.origin + Vector3(rand_range(-10,10), rand_range(-5,5), 0)
 	goldrings.activate()
 
-func spawnSmartBomb():
+func spawnSmartBomb() -> void:
 	if smart_bomb_pool.empty():
 		return
 	var smartbomb = getSmartBombFromPool()
@@ -108,7 +107,7 @@ func spawnSmartBomb():
 	smartbomb.transform.origin = transform.origin + Vector3(rand_range(-10,10), rand_range(-5,5), 0)
 	smartbomb.activate()
 
-func _on_Timer_timeout():
+func _on_Timer_timeout() -> void:
 	RingTicker += 1
 	if RingTicker > 3:
 		spawnGoldRing()
@@ -116,5 +115,5 @@ func _on_Timer_timeout():
 	else:
 		spawnRing()
 
-func _on_Timer2_timeout():
+func _on_Timer2_timeout() -> void:
 	spawnSmartBomb()

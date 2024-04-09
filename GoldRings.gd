@@ -7,12 +7,12 @@ var variation:float = rand_range(-0.25, 0.5)
 var coinrotate:float = 3
 var active:bool = true
 
-func activate():
+func activate() -> void:
 	$AnimationPlayer.stop(true)
 	active = true
 	self.show()
 
-func deactivate():
+func deactivate() -> void:
 	active = false
 	self.hide()
 
@@ -25,7 +25,7 @@ func _physics_process(_delta:float) -> void:
 			deactivate()
 
 
-func _on_Area_area_entered(area):
+func _on_Area_area_entered(area:Area) -> void:
 	if area.is_in_group("Player"):
 		$AnimationPlayer.play("caught")
 		#get_node("AnimationPlayer").play("caught")

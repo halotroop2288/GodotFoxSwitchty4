@@ -1,19 +1,19 @@
 extends CanvasLayer
 
 
-func _ready():
+func _ready() -> void:
 	add_to_group("GUI")
 
-func update_gui_rings(rings):
+func update_gui_rings(rings:int) -> void:
 	$Control/Panel/RingsTotal.text = str(rings)
 
-func update_gui_wings(wings):
+func update_gui_wings(wings:int) -> void:
 	$Control/Panel/WingsTotal.text = str(wings)
 
-func update_gui_bombs(bombs):
+func update_gui_bombs(bombs:int) -> void:
 	$Control/Panel/BombsTotal.text = str(bombs)
 
-func update_gui_health(health):
+func update_gui_health(health:int) -> void:
 	if health == 3:
 		$Control/Panel/Health100.visible = true
 		$Control/Panel/Health66.visible = false
@@ -28,7 +28,7 @@ func update_gui_health(health):
 		$Control/Panel/Health100.visible = false
 	pass
 
-func update_gui_goldrings(goldrings):
+func update_gui_goldrings(goldrings:int) -> void:
 	if goldrings == 0:
 		$Control/Panel/Rings_0.visible = true
 		$Control/Panel/Rings_1.visible = false
