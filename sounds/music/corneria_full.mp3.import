@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/corneria_full.mp3-6acc0628944c8beadf481279d473054a.mp3str"
+
+[deps]
+
+source_file="res://sounds/music/corneria_full.mp3"
+dest_files=[ "res://.import/corneria_full.mp3-6acc0628944c8beadf481279d473054a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

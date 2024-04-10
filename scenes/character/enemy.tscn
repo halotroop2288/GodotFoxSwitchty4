@@ -2,7 +2,7 @@
 
 [ext_resource path="res://scenes/character/enemy.gd" type="Script" id=1]
 [ext_resource path="res://scenes/object/Explosion.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Invader III/Invader III.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://Models/Invader III/Invader III.obj" type="ArrayMesh" id=3]
 
 [sub_resource type="SphereShape" id=1]
 radius = 0.683308

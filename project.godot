@@ -34,7 +34,7 @@ _global_script_class_icons={
 
 config/name="Star-Fox-64"
 run/main_scene="res://scenes/gui/StartMenu.tscn"
-boot_splash/image="res://SplashScreens/Title.jpg"
+boot_splash/image="res://textures/backgrounds/title.jpg"
 boot_splash/bg_color=Color( 0, 0, 0, 1 )
 config/icon="res://icon.png"
 
@@ -45,9 +45,9 @@ Global="*res://scenes/object/Global.gd"
 [display]
 
 window/size/width=1920
-window/size/height=1280
-window/size/test_width=1920
-window/size/test_height=1280
+window/size/height=1080
+window/size/test_width=1280
+window/size/test_height=720
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
 

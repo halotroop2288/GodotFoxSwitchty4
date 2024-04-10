@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/arwing_hit_obstacle.mp3-de43d96a7b056d53edcddf702d7e5724.mp3str"
+
+[deps]
+
+source_file="res://sounds/sound_effects/arwing_hit_obstacle.mp3"
+dest_files=[ "res://.import/arwing_hit_obstacle.mp3-de43d96a7b056d53edcddf702d7e5724.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

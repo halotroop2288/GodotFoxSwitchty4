@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/grey asteroid.obj-0e7692dfc4cdbec773c03e858d140135.mesh"
+
+[deps]
+
+files=[ "res://.import/grey asteroid.obj-0e7692dfc4cdbec773c03e858d140135.mesh" ]
+
+source_file="res://Models/Asteroids/grey asteroid.obj"
+dest_files=[ "res://.import/grey asteroid.obj-0e7692dfc4cdbec773c03e858d140135.mesh", "res://.import/grey asteroid.obj-0e7692dfc4cdbec773c03e858d140135.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
