@@ -84,7 +84,7 @@ func player_damage() -> void:
 	update_GUI()
 
 func end_game() -> void:
-	get_tree().change_scene("res://GameOver.tscn")
+	get_tree().change_scene("res://scenes/gui/GameOver.tscn")
 
 func spinright() -> void:
 	get_node("AnimationPlayer").play("spinright")

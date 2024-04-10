@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Invader III.obj-d3ec432637a26d9a9d5a131799f5d826.mesh"
+
+[deps]
+
+files=[ "res://.import/Invader III.obj-d3ec432637a26d9a9d5a131799f5d826.mesh" ]
+
+source_file="res://Models/Invader III/Invader III.obj"
+dest_files=[ "res://.import/Invader III.obj-d3ec432637a26d9a9d5a131799f5d826.mesh", "res://.import/Invader III.obj-d3ec432637a26d9a9d5a131799f5d826.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

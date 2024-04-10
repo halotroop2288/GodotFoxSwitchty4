@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Laser Power Up.obj-2927300701be8cba8027e429b4705f65.mesh"
+
+[deps]
+
+files=[ "res://.import/Laser Power Up.obj-2927300701be8cba8027e429b4705f65.mesh" ]
+
+source_file="res://Models/Laser Power Up/Laser Power Up.obj"
+dest_files=[ "res://.import/Laser Power Up.obj-2927300701be8cba8027e429b4705f65.mesh", "res://.import/Laser Power Up.obj-2927300701be8cba8027e429b4705f65.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

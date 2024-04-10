@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes/object/Asteroid.gd" type="Script" id=1]
-[ext_resource path="res://Asteroids/metal asteroid.obj" type="ArrayMesh" id=2]
-[ext_resource path="res://Asteroids/brown.material" type="Material" id=3]
+[ext_resource path="res://Models/Asteroids/metal asteroid.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://Models/Asteroids/brown.material" type="Material" id=3]
 
 [sub_resource type="CapsuleShape" id=1]
 height = 1.62128

@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Arwing.obj-8bf48e2861c113f83d0bdb75ab945409.mesh"
+
+[deps]
+
+files=[ "res://.import/Arwing.obj-8bf48e2861c113f83d0bdb75ab945409.mesh" ]
+
+source_file="res://Models/Arwing/Arwing.obj"
+dest_files=[ "res://.import/Arwing.obj-8bf48e2861c113f83d0bdb75ab945409.mesh", "res://.import/Arwing.obj-8bf48e2861c113f83d0bdb75ab945409.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

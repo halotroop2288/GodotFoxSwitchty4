@@ -1,18 +1,18 @@
 [gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://scenes/level/Game.gd" type="Script" id=1]
-[ext_resource path="res://Sounds/no damage hit.wav" type="AudioStream" id=2]
-[ext_resource path="res://Sounds/damage alert light.wav" type="AudioStream" id=3]
-[ext_resource path="res://Sounds/GoldRings3.wav" type="AudioStream" id=4]
+[ext_resource path="res://sounds/sound_effects/deflect.wav" type="AudioStream" id=2]
+[ext_resource path="res://sounds/sound_effects/damage_alert.wav" type="AudioStream" id=3]
+[ext_resource path="res://sounds/sound_effects/gold_ring_pickup.wav" type="AudioStream" id=4]
 [ext_resource path="res://scenes/gui/Pause.gd" type="Script" id=5]
-[ext_resource path="res://Sounds/SilverRings.wav" type="AudioStream" id=6]
-[ext_resource path="res://UI/tim-barton-skybox-1-equirectangular-10000.jpg" type="Texture" id=7]
-[ext_resource path="res://Sounds/Corneria.mp3" type="AudioStream" id=8]
-[ext_resource path="res://Sounds/explosion.wav" type="AudioStream" id=9]
-[ext_resource path="res://Sounds/arwing hit ground.wav" type="AudioStream" id=10]
-[ext_resource path="res://Sounds/pause.wav" type="AudioStream" id=11]
-[ext_resource path="res://Sounds/fly-to-next-mission.wav" type="AudioStream" id=12]
-[ext_resource path="res://Sounds/bomb pickup.wav" type="AudioStream" id=13]
+[ext_resource path="res://sounds/sound_effects/silver_ring_pickup.wav" type="AudioStream" id=6]
+[ext_resource path="res://UI/skybox.jpg" type="Texture" id=7]
+[ext_resource path="res://sounds/music/corneria_full.mp3" type="AudioStream" id=8]
+[ext_resource path="res://sounds/sound_effects/explosion.wav" type="AudioStream" id=9]
+[ext_resource path="res://sounds/sound_effects/arwing_hit_ground.wav" type="AudioStream" id=10]
+[ext_resource path="res://sounds/sound_effects/pause.wav" type="AudioStream" id=11]
+[ext_resource path="res://sounds/sound_effects/end_mission_speed_up.wav" type="AudioStream" id=12]
+[ext_resource path="res://sounds/sound_effects/bomb_pickup.wav" type="AudioStream" id=13]
 [ext_resource path="res://scenes/level/EnemySpawner.tscn" type="PackedScene" id=14]
 [ext_resource path="res://scenes/character/player.tscn" type="PackedScene" id=15]
 [ext_resource path="res://scenes/level/ItemSpawner.tscn" type="PackedScene" id=16]
@@ -451,7 +451,7 @@ light_energy = 0.5
 [node name="ColorRect" type="ColorRect" parent="ScreenShader"]
 material = SubResource( 10 )
 margin_right = 1920.0
-margin_bottom = 1280.0
+margin_bottom = 1080.0
 
 [node name="ItemSpawner" parent="." instance=ExtResource( 16 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -228.052 )
